@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>booksky</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="navbar">Booksky</div>
+    <div class="container">
+      <div class="box">
+        <h2>ATOMIC HABITS</h2>
+        <h4>James Clear</h4>
+        <p>
+          Atomic Habits by James Clear is a comphrensive, practical
+          guide on how to change your habits anf get 1% better every day. Using a framework called the  Four Laws of Behavior change,Atomic Habits teaches reades a simple
+          set of rules for creating good habits and breaking bad ones.
+        </p>
+        <button onclick="deletebutton(event)">Delete</button>
+      </div>
+    </div>
+    <div id="popbox-overlay"></div>
+    <button id="plusbutton">+</button>
+    <div id="popbox">
+      <form>
+        <h3>Add Book</h3>
+        <input
+          type="text"
+          placeholder="Book title"
+          id="book-input-title"
+        /><br />
+        <input
+          type="text"
+          placeholder="book author"
+          id="book-input-author"
+        /><br />
+        <textarea placeholder="Short description" id="textarea-input"></textarea
+        ><br />
+        <button id="add-book">Add</button>
+        <button id="cancelbutton">Cancel</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
